@@ -9,7 +9,7 @@ describe('Test',()=>{
         cy.url().should('contain','google.com').and('eq', 'https://www.google.com/').and('include','www.google')
         cy.xpath("//textarea[@id='APjFqb']").type('macbook')
         cy.xpath("//div[@id='Alh6id']//li").should('have.length',10)
-        cy.xpath("//img[@alt='Google']").should('be.visible')
+        cy.get('#hplogo').should('be.visible')
 
         cy.xpath("//textarea[@id='APjFqb']").clear().type('macbook')
 
