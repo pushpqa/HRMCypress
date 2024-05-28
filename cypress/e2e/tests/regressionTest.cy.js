@@ -1,9 +1,9 @@
 import { loginPage } from "../../pages/loginPage"
 const loginOBJ = new loginPage
 import loginData from '../../fixtures/loginData.json'
-describe('login',()=>{
+describe('regression test',()=>{
 
-    it('login',()=>{
+    it('regression test',()=>{
         loginOBJ.openBrowser()
         loginOBJ.verifyHRMLogo()
         loginOBJ.enterUserName(loginData.userName)

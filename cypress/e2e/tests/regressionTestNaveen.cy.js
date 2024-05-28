@@ -1,9 +1,9 @@
 import { loginPageNaveen } from "../../pages/loginPageNaveen"
 const loginOBJ = new loginPageNaveen
 import loginDataNaveen from '../../fixtures/loginDataNaveen.json'
-describe('login',()=>{
+describe('regression Naveen test',()=>{
 
-    it('login', ()=>{
+    it('regression Naveen test', ()=>{
     
         loginOBJ.openBrowser()
         loginOBJ.verifyNaveenLogo()

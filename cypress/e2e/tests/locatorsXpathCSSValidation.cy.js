@@ -1,6 +1,6 @@
-describe('Test',()=>{
+describe('locator Xpath',()=>{
 
-    it('Test',()=>{
+    it('locator Xpath',()=>{
 
         cy.visit('https://www.google.com/')
         cy.title().should('include','Google')

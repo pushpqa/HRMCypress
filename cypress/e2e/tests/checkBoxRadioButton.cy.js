@@ -1,7 +1,7 @@
 
 describe('Radiobutton',()=>{
 
-    it('Radiobutton',()=>{
+    it('Radiobutton 1',()=>{
         cy.visit("https://naveenautomationlabs.com/opencart/index.php?route=account/register")
         cy.get("input[value='1'][name='newsletter']").should('be.visible')
         cy.get("input[value='1'][name='newsletter']").check().should('be.checked')
@@ -15,7 +15,7 @@ describe('Radiobutton',()=>{
 
 })
 
-    describe('Radiobutton',()=>{
+    describe('Radiobutton 2',()=>{
 
     it('Radiobutton',()=>{
         cy.visit("https://naveenautomationlabs.com/opencart/index.php?route=account/register")
