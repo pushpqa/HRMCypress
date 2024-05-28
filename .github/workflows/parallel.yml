@@ -1,4 +1,4 @@
-name: productSearch
+name: parallel
 on: push
 jobs:
 
