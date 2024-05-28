@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test:ProductSearch": "npx cypress run --spec cypress/e2e/tests/searchProductTest.cy.js",
+    "test:CheckBox": "npx cypress run --spec cypress/e2e/tests/checkBoxRadioButton.cy.js",
     "test:testFolder": "npx cypress run --spec cypress/e2e/tests",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
