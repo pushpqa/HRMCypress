@@ -1,7 +1,7 @@
 
 describe('Radiobutton',()=>{
 
-    it.skip('Radiobutton',()=>{
+    it('Radiobutton',()=>{
         cy.visit("https://naveenautomationlabs.com/opencart/index.php?route=account/register")
         cy.get("input[value='1'][name='newsletter']").should('be.visible')
         cy.get("input[value='1'][name='newsletter']").check().should('be.checked')

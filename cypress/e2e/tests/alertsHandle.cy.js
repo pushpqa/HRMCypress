@@ -1,7 +1,7 @@
 
 describe('Test',()=>{
 
-    it.skip('Test',()=>{
+    it('Test',()=>{
 
         // Normal alert
 
