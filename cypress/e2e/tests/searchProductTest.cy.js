@@ -6,7 +6,7 @@ import loginDataNaveen from '../../fixtures/loginDataNaveen.json'
 describe('loginNaveen', () => {
 
     before (()=> {
-        cy.searchProduct(loginDataNaveen.userName, loginDataNaveen.password)
+        cy.login(loginDataNaveen.userName, loginDataNaveen.password)
 
     })
 
