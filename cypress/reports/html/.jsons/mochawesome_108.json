@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 1,
+    "failures": 0,
+    "start": "2024-06-03T18:28:54.666Z",
+    "end": "2024-06-03T18:28:54.688Z",
+    "duration": 22,
+    "testsRegistered": 1,
+    "passPercent": null,
+    "pendingPercent": 100,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8c45bacf-0a53-4916-a357-b8b0e77294a7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests\\locatorsXpathCSSValidation.cy.js",
+      "file": "cypress\\e2e\\tests\\locatorsXpathCSSValidation.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "717b6f29-99cf-4290-aba6-38c00d0f457b",
+          "title": "locator Xpath",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "locator Xpath",
+              "fullTitle": "locator Xpath locator Xpath",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "cy.visit('https://www.google.com/');\ncy.title().should('include', 'Google');\n// cy.title().should('contain','Google')\n// cy.title().should('eq','Google')\ncy.url().should('contain', 'google.com').and('eq', 'https://www.google.com/').and('include', 'www.google');\ncy.xpath(\"//textarea[@id='APjFqb']\").type('macbook');\ncy.xpath(\"//div[@id='Alh6id']//li\").should('have.length', 10);\ncy.get('.lnXdpd').should('be.visible');\ncy.xpath(\"//textarea[@id='APjFqb']\").clear().type('macbook');\ncy.wait(3000);\n// cy.xpath(\"//div[@id='Alh6id']//li\").contains('MacBook Air').click() //Static options to select the text\ncy.xpath(\"//div[@id='Alh6id']//li\").each(($el, index, $list) => {\n  // dynamic options to select\n  // cy.log($el.text)\n  if ($el.text() == 'MacBook') {\n    cy.wrap($el).click();\n  }\n});",
+              "err": {},
+              "uuid": "6685531a-f742-48f8-84e6-bc4f067b33fa",
+              "parentUUID": "717b6f29-99cf-4290-aba6-38c00d0f457b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [
+            "6685531a-f742-48f8-84e6-bc4f067b33fa"
+          ],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

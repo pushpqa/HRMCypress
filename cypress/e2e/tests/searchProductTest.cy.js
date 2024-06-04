@@ -10,7 +10,7 @@ describe('loginNaveen', () => {
 
     })
 
-    it('searchProduct',()=>{
+    it('searchProduct', {tags:['@Smoke','@Regression']},()=>{
         dashboardOBJ.verifyMyAccountText();
         dashboardOBJ.searchProduct(loginDataNaveen.product);
         dashboardOBJ.clickOnSearchIcon();

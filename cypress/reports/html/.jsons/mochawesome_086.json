@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-06-03T18:21:35.214Z",
+    "end": "2024-06-03T18:21:40.606Z",
+    "duration": 5392,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3c64c202-f7c8-4467-b81f-228976dd45a0",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests\\footorLink.cy.js",
+      "file": "cypress\\e2e\\tests\\footorLink.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b54794c2-60b1-4fd7-8e1a-eb2106f397ef",
+          "title": "Footer links",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Footor links",
+              "fullTitle": "Footer links Footor links",
+              "timedOut": null,
+              "duration": 5373,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=57\");\ncy.get(\".dropdown-menu\").should('have.length', 7);\ncy.get(\".dropdown-menu\").contains('Monitors').click({\n  force: true\n});",
+              "err": {},
+              "uuid": "0fb92a60-bba3-4460-8ab6-9a12d492cd75",
+              "parentUUID": "b54794c2-60b1-4fd7-8e1a-eb2106f397ef",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0fb92a60-bba3-4460-8ab6-9a12d492cd75"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5373,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

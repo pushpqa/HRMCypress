@@ -34,5 +34,5 @@ Cypress.Commands.add('login', (email, password)=>{
 })
 
  /// <refrence types="Cypress-xpath"/>      
-/// <refrence types="Cypress"/>      
+/// <refrence types="Cypress-grep"/>      
 

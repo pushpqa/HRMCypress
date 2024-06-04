@@ -1,7 +1,7 @@
 
 describe('Alerts',()=>{
 
-    it('Alerts 1',()=>{
+    it('Alerts 1, Smoke', {tags:'@Regression'},()=>{
 
         // Normal alert
 
@@ -28,7 +28,7 @@ describe('Alerts',()=>{
 
     // javaScript confirm alert : with text 'ok' and 'Cancel' options
 
-    it('Alerts Confirm',()=>{
+    it('Alerts Confirm', {tags:['@Smoke','@Regression']},()=>{
     cy.visit('https://the-internet.herokuapp.com/javascript_alerts')
     cy.get("button[onclick='jsConfirm()']").click()
 

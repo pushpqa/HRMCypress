@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-06-03T18:25:38.550Z",
+    "end": "2024-06-03T18:25:43.464Z",
+    "duration": 4914,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "197f369d-b4b2-40a9-a56c-3c992ff876c1",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests\\checkBoxRadioButton.cy.js",
+      "file": "cypress\\e2e\\tests\\checkBoxRadioButton.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "173a0234-18d3-491b-b72b-6e06f9f34942",
+          "title": "Radiobutton",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Radiobutton 1",
+              "fullTitle": "Radiobutton Radiobutton 1",
+              "timedOut": null,
+              "duration": 3868,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://naveenautomationlabs.com/opencart/index.php?route=account/register\");\ncy.get(\"input[value='1'][name='newsletter']\").should('be.visible');\ncy.get(\"input[value='1'][name='newsletter']\").check().should('be.checked');\ncy.get(\"input[value='0'][name='newsletter']\").should('not.be.checked');\ncy.get(\"input[value='0'][name='newsletter']\").check().should('be.checked');\ncy.get(\"input[value='1'][name='newsletter']\").should('not.be.checked');\ncy.xpath(\"//input[@name='agree']\").should('not.be.checked');\ncy.xpath(\"//input[@name='agree']\").check().should('be.checked');",
+              "err": {},
+              "uuid": "e943b429-211c-414e-a9ab-c317db9ac0d4",
+              "parentUUID": "173a0234-18d3-491b-b72b-6e06f9f34942",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e943b429-211c-414e-a9ab-c317db9ac0d4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3868,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "7925b3b2-52ab-4724-8063-9f3ac54dccc4",
+          "title": "Radiobutton 2",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Radiobutton",
+              "fullTitle": "Radiobutton 2 Radiobutton",
+              "timedOut": null,
+              "duration": 972,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://naveenautomationlabs.com/opencart/index.php?route=account/register\");\ncy.get(\"input[value='Continue']\").click();\ncy.xpath(\"//input[@name='agree']\").should('not.be.checked');\ncy.get('.alert.alert-danger.alert-dismissible').should('contain', 'Warning: You must agree');\ncy.xpath(\"//input[@name='agree']\").check().should('be.checked');",
+              "err": {},
+              "uuid": "24aa62db-a57d-4200-bd6a-c14ebc97b78e",
+              "parentUUID": "7925b3b2-52ab-4724-8063-9f3ac54dccc4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "24aa62db-a57d-4200-bd6a-c14ebc97b78e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 972,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

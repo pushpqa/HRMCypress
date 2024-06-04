@@ -3,7 +3,7 @@ const loginOBJ = new loginPageNaveen
 import loginDataNaveen from '../../fixtures/loginDataNaveen.json'
 describe('regression Naveen test',()=>{
 
-    it('regression Naveen test', ()=>{
+    it('regression Naveen test', {tags:['@Smoke']}, ()=>{
     
         loginOBJ.openBrowser()
         loginOBJ.verifyNaveenLogo()

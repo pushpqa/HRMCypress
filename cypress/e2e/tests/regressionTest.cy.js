@@ -3,7 +3,7 @@ const loginOBJ = new loginPage
 import loginData from '../../fixtures/loginData.json'
 describe('regression test',()=>{
 
-    it('regression test',()=>{
+    it('regression test', {tags:['@Smoke','@Regression']},()=>{
         loginOBJ.openBrowser()
         loginOBJ.verifyHRMLogo()
         loginOBJ.enterUserName(loginData.userName)

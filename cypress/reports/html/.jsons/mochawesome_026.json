@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 1,
+    "failures": 0,
+    "start": "2024-06-03T17:59:45.621Z",
+    "end": "2024-06-03T17:59:45.647Z",
+    "duration": 26,
+    "testsRegistered": 1,
+    "passPercent": null,
+    "pendingPercent": 100,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7fe77075-057c-4de9-8881-5e6d0961ef49",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests\\regressionTestNaveen.cy.js",
+      "file": "cypress\\e2e\\tests\\regressionTestNaveen.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6a5ddf42-8292-404a-9522-1ba124554acf",
+          "title": "regression Naveen test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "regression Naveen test",
+              "fullTitle": "regression Naveen test regression Naveen test",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "loginOBJ.openBrowser();\nloginOBJ.verifyNaveenLogo();\nloginOBJ.enterUserName(_loginDataNaveen.default.userName);\nloginOBJ.enterPassword(_loginDataNaveen.default.password);\nloginOBJ.selectLoginBtn();",
+              "err": {},
+              "uuid": "79bf3329-7e1d-4e10-8e46-f53921b176c9",
+              "parentUUID": "6a5ddf42-8292-404a-9522-1ba124554acf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [
+            "79bf3329-7e1d-4e10-8e46-f53921b176c9"
+          ],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

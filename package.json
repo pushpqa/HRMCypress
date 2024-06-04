@@ -6,15 +6,20 @@
   "scripts": {
     "test:ProductSearch": "npx cypress run --spec cypress/e2e/tests/searchProductTest.cy.js",
     "test:CheckBox": "npx cypress run --spec cypress/e2e/tests/checkBoxRadioButton.cy.js",
-    "test:testFolder": "npx cypress run --spec cypress/e2e/tests",
+    "test:testFolder": "npx cypress run --spec cypress/e2e/tests --config pageLoadTimeout=100000",
+    "test:smoke": "cypress run --env grep=\"Smoke\" --config pageLoadTimeout=100000",
+    "test:tag:smokeChrome": "cypress run --env grepTags=\"@Smoke\"--config pageLoadTimeout=100000 -b chrome",
+    "test:tag:regression": "cypress run --env grepTags=\"@Regression\"--config pageLoadTimeout=100000",
+    "test:tag:SmokeOrRegression": "cypress run --env grepTags=\"@Smoke @Regression\"--config pageLoadTimeout=100000",
+    "test:tag:SmokeAndRegression": "cypress run --env grepTags=\"@Smoke+@Regression\"--config pageLoadTimeout=100000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.9.0",
+    "@cypress/grep": "^4.0.1",
+    "cypress": "^13.10.0",
     "cypress-mochawesome-reporter": "^3.8.2",
     "cypress-xpath": "^2.0.1"
   }
 }
-

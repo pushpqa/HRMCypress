@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 2,
+    "failures": -1,
+    "start": "2024-06-03T18:19:35.759Z",
+    "end": "2024-06-03T18:19:35.796Z",
+    "duration": 37,
+    "testsRegistered": 2,
+    "passPercent": null,
+    "pendingPercent": 100,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e3ab48e4-56fc-4cc6-a6a2-3648932b5ea7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests\\alertsHandle.cy.js",
+      "file": "cypress\\e2e\\tests\\alertsHandle.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5f0824ae-2071-4a53-bb79-2bc812d8ac9a",
+          "title": "Alerts",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Alerts 1, Smoke",
+              "fullTitle": "Alerts Alerts 1, Smoke",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "// Normal alert\ncy.visit('https://the-internet.herokuapp.com/javascript_alerts');\ncy.get(\"button[onclick='jsAlert()']\").click();\ncy.on('window:alert', t => {\n  expect(t).contains('I am a JS Alert');\n});\ncy.get(\"#result\").should('contain', 'You successfully clicked an alert');\n//TDD assertion\n//     cy.get(\"#result\").then((x)=>{\n//        let actMsg = x.text()\n//        let expMsg = 'You successfully clicked an alert'\n//        assert.equal(actMsg, expMsg)\n// })",
+              "err": {},
+              "uuid": "19294c77-d49f-43c0-a0c1-9fcf5ed690f1",
+              "parentUUID": "5f0824ae-2071-4a53-bb79-2bc812d8ac9a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Alerts Confirm",
+              "fullTitle": "Alerts Alerts Confirm",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "cy.visit('https://the-internet.herokuapp.com/javascript_alerts');\ncy.get(\"button[onclick='jsConfirm()']\").click();\ncy.on('window:confirm', t => {\n  expect(t).contains('I am a JS Confirm');\n  cy.on('window:alert', () => \"false\");\n});\ncy.get('#result').should('contain', 'You clicked: Ok');",
+              "err": {},
+              "uuid": "a1201c10-9958-424f-b96e-4813e60bd3c6",
+              "parentUUID": "5f0824ae-2071-4a53-bb79-2bc812d8ac9a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [
+            "19294c77-d49f-43c0-a0c1-9fcf5ed690f1",
+            "a1201c10-9958-424f-b96e-4813e60bd3c6"
+          ],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
