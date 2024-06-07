@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 1,
+    "failures": 0,
+    "start": "2024-06-05T16:35:13.476Z",
+    "end": "2024-06-05T16:35:13.496Z",
+    "duration": 20,
+    "testsRegistered": 1,
+    "passPercent": null,
+    "pendingPercent": 100,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f31349b1-ff47-4fcf-9c48-7496ef70f14d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests\\regressionTest.cy.js",
+      "file": "cypress\\e2e\\tests\\regressionTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4a639334-4c77-4a4a-be96-96c34b8fb12d",
+          "title": "regression test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "regression test",
+              "fullTitle": "regression test regression test",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "loginOBJ.openBrowser();\nloginOBJ.verifyHRMLogo();\nloginOBJ.enterUserName(_loginData.default.userName);\nloginOBJ.enterPassword(_loginData.default.password);\nloginOBJ.selectLoginBtn();",
+              "err": {},
+              "uuid": "ee99311b-4398-49fb-b27d-60e6c1b68bb8",
+              "parentUUID": "4a639334-4c77-4a4a-be96-96c34b8fb12d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [
+            "ee99311b-4398-49fb-b27d-60e6c1b68bb8"
+          ],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

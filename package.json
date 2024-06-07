@@ -8,7 +8,7 @@
     "test:CheckBox": "npx cypress run --spec cypress/e2e/tests/checkBoxRadioButton.cy.js",
     "test:testFolder": "npx cypress run --spec cypress/e2e/tests --config pageLoadTimeout=100000",
     "test:smoke": "cypress run --env grep=\"Smoke\" --config pageLoadTimeout=100000",
-    "test:tag:smokeChrome": "cypress run --env grepTags=\"@Smoke\"--config pageLoadTimeout=100000 -b chrome",
+    "test:tag:smokeChrome": "cypress run --env grepTags=\"@Smoke\"--config pageLoadTimeout=100000 -b chrome --headed",
     "test:tag:regression": "cypress run --env grepTags=\"@Regression\"--config pageLoadTimeout=100000",
     "test:tag:SmokeOrRegression": "cypress run --env grepTags=\"@Smoke @Regression\"--config pageLoadTimeout=100000",
     "test:tag:SmokeAndRegression": "cypress run --env grepTags=\"@Smoke+@Regression\"--config pageLoadTimeout=100000",
