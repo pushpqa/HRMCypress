@@ -23,7 +23,7 @@ describe('loginNaveen', () => {
         cy.get("#content > div:nth-child(5) > div:nth-child(1) > div > div.image > a > img").click()
         cy.get('h1').then((x)=>{
             let actualText = x.text()
-            let expectedText = 'Apple Cinema 30"'
+            let expectedText = 'Apple Cinema 301"'
             assert.equal(actualText,expectedText)
         })
         // const TotalProduct = cy.xpath("//li//a[1]//img[1]")

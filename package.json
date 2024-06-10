@@ -12,6 +12,7 @@
     "test:tag:regression": "cypress run --env grepTags=\"@Regression\"--config pageLoadTimeout=100000",
     "test:tag:SmokeOrRegression": "cypress run --env grepTags=\"@Smoke @Regression\"--config pageLoadTimeout=100000",
     "test:tag:SmokeAndRegression": "cypress run --env grepTags=\"@Smoke+@Regression\"--config pageLoadTimeout=100000",
+    "dashboard:test": "npx cypress run --record --key 96848a58-40a9-4f89-9e6e-1a4d601d80a1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

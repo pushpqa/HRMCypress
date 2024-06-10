@@ -2,15 +2,15 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 0,
-    "pending": 1,
+    "passes": 1,
+    "pending": 0,
     "failures": 0,
-    "start": "2024-06-05T16:36:52.373Z",
-    "end": "2024-06-05T16:36:52.400Z",
-    "duration": 27,
+    "start": "2024-06-10T15:53:26.259Z",
+    "end": "2024-06-10T15:53:36.495Z",
+    "duration": 10236,
     "testsRegistered": 1,
-    "passPercent": null,
-    "pendingPercent": 100,
+    "passPercent": 100,
+    "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "b1e6b341-8433-46a1-91e2-6d82293e52e0",
+      "uuid": "3dc961a2-8cb1-4d23-83a0-9bb13c4f9234",
       "title": "",
       "fullFile": "cypress\\e2e\\tests\\regressionTest.cy.js",
       "file": "cypress\\e2e\\tests\\regressionTest.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c6506147-db4f-4225-8e30-97b8d4fc9c75",
+          "uuid": "9f4d19b2-1052-422b-8787-7475ee3980ec",
           "title": "regression test",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "regression test",
               "fullTitle": "regression test regression test",
               "timedOut": null,
-              "duration": 0,
-              "state": "pending",
-              "speed": null,
-              "pass": false,
+              "duration": 6683,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
               "fail": false,
-              "pending": true,
+              "pending": false,
               "context": null,
               "code": "loginOBJ.openBrowser();\nloginOBJ.verifyHRMLogo();\nloginOBJ.enterUserName(_loginData.default.userName);\nloginOBJ.enterPassword(_loginData.default.password);\nloginOBJ.selectLoginBtn();",
               "err": {},
-              "uuid": "6ac820ed-b96f-4179-989b-6d379b465cb7",
-              "parentUUID": "c6506147-db4f-4225-8e30-97b8d4fc9c75",
+              "uuid": "09cbbcc8-9c93-483e-9eea-cd62e6fd72e4",
+              "parentUUID": "9f4d19b2-1052-422b-8787-7475ee3980ec",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [],
-          "pending": [
-            "6ac820ed-b96f-4179-989b-6d379b465cb7"
+          "passes": [
+            "09cbbcc8-9c93-483e-9eea-cd62e6fd72e4"
           ],
+          "failures": [],
+          "pending": [],
           "skipped": [],
-          "duration": 0,
+          "duration": 6683,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
