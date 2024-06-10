@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:ProductSearch": "npx cypress run --spec cypress/e2e/tests/searchProductTest.cy.js",
-    "test:CheckBox": "npx cypress run --spec cypress/e2e/tests/checkBoxRadioButton.cy.js",
+    "test:ProductSearch": "npx cypress run --spec cypress/e2e/tests/searchProductTest.cy.js --record --key 96848a58-40a9-4f89-9e6e-1a4d601d80a1",
+    "test:CheckBox": "npx cypress run --record --key 96848a58-40a9-4f89-9e6e-1a4d601d80a1 --spec cypress/e2e/tests/checkBoxRadioButton.cy.js",
     "test:testFolder": "npx cypress run --spec cypress/e2e/tests --config pageLoadTimeout=100000",
     "test:smoke": "cypress run --env grep=\"Smoke\" --config pageLoadTimeout=100000",
     "test:tag:smokeChrome": "cypress run --env grepTags=\"@Smoke\"--config pageLoadTimeout=100000 -b chrome --headed",
