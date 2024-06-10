@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-06-10T16:38:51.222Z",
+    "end": "2024-06-10T16:38:56.824Z",
+    "duration": 5602,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d4adff6c-6871-465c-902c-fcccea82d6bc",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests\\checkBoxRadioButton.cy.js",
+      "file": "cypress\\e2e\\tests\\checkBoxRadioButton.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "97842235-9d52-47c1-b1a1-c318d6872919",
+          "title": "Radiobutton",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Radiobutton 1",
+              "fullTitle": "Radiobutton Radiobutton 1",
+              "timedOut": null,
+              "duration": 4423,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\tests\\\\checkBoxRadioButton.cy.js\"\n}",
+              "code": "cy.visit(\"https://naveenautomationlabs.com/opencart/index.php?route=account/register\");\ncy.get(\"input[value='1'][name='newsletter']\").should('be.visible');\ncy.get(\"input[value='1'][name='newsletter']\").check().should('be.checked');\ncy.get(\"input[value='0'][name='newsletter']\").should('not.be.checked');\ncy.get(\"input[value='0'][name='newsletter']\").check().should('be.checked');\ncy.get(\"input[value='1'][name='newsletter']\").should('not.be.checked');\ncy.xpath(\"//input[@name='agree']\").should('not.be.checked');\ncy.xpath(\"//input[@name='agree']\").check().should('be.checked');",
+              "err": {},
+              "uuid": "22a821c1-18aa-48f4-85df-8f0bc210bf67",
+              "parentUUID": "97842235-9d52-47c1-b1a1-c318d6872919",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "22a821c1-18aa-48f4-85df-8f0bc210bf67"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4423,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "b0f13e86-78c6-476e-97cc-976f15117c7b",
+          "title": "Radiobutton 2",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Radiobutton",
+              "fullTitle": "Radiobutton 2 Radiobutton",
+              "timedOut": null,
+              "duration": 1095,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\tests\\\\checkBoxRadioButton.cy.js\"\n}",
+              "code": "cy.visit(\"https://naveenautomationlabs.com/opencart/index.php?route=account/register\");\ncy.get(\"input[value='Continue']\").click();\ncy.xpath(\"//input[@name='agree']\").should('not.be.checked');\ncy.get('.alert.alert-danger.alert-dismissible').should('contain', 'Warning: You must agree');\ncy.xpath(\"//input[@name='agree']\").check().should('be.checked');",
+              "err": {},
+              "uuid": "ffa4fba0-0645-4018-b815-badb5545dca5",
+              "parentUUID": "b0f13e86-78c6-476e-97cc-976f15117c7b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ffa4fba0-0645-4018-b815-badb5545dca5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1095,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

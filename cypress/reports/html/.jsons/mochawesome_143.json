@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-06-10T16:39:16.541Z",
+    "end": "2024-06-10T16:39:26.130Z",
+    "duration": 9589,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "eea74c1f-2b2d-428c-b744-f3d49adf51de",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests\\locatorsXpathCSSValidation.cy.js",
+      "file": "cypress\\e2e\\tests\\locatorsXpathCSSValidation.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a2b305f8-8423-4606-8ddc-0dfea4b322c6",
+          "title": "locator Xpath",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "locator Xpath",
+              "fullTitle": "locator Xpath locator Xpath",
+              "timedOut": null,
+              "duration": 6893,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\tests\\\\locatorsXpathCSSValidation.cy.js\"\n}",
+              "code": "cy.visit('https://www.google.com/');\ncy.title().should('include', 'Google');\n// cy.title().should('contain','Google')\n// cy.title().should('eq','Google')\ncy.url().should('contain', 'google.com').and('eq', 'https://www.google.com/').and('include', 'www.google');\ncy.xpath(\"//textarea[@id='APjFqb']\").type('macbook');\ncy.xpath(\"//div[@id='Alh6id']//li\").should('have.length', 10);\ncy.get('.lnXdpd').should('be.visible');\ncy.xpath(\"//textarea[@id='APjFqb']\").clear().type('macbook');\ncy.wait(3000);\n// cy.xpath(\"//div[@id='Alh6id']//li\").contains('MacBook Air').click() //Static options to select the text\ncy.xpath(\"//div[@id='Alh6id']//li\").each(($el, index, $list) => {\n  // dynamic options to select\n  // cy.log($el.text)\n  if ($el.text() == 'MacBook') {\n    cy.wrap($el).click();\n  }\n});",
+              "err": {},
+              "uuid": "b47e6478-af09-4d41-955d-54f3ac70350e",
+              "parentUUID": "a2b305f8-8423-4606-8ddc-0dfea4b322c6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b47e6478-af09-4d41-955d-54f3ac70350e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6893,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
